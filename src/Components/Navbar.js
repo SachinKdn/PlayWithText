@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import {
-  Link
-} from "react-router-dom";
+// import {
+//   Link
+// } from "react-router-dom";
 // const theme12 = "dark";
 // console.log(theme12)
 export default function Navbar({theme1}) {
@@ -44,18 +44,18 @@ export default function Navbar({theme1}) {
   return (
         <nav className={color} style={{border : '1px solid rgba(0, 0, 0, 0.0)', boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.4)', backgroundColor:'black'}}>
   <div className="container-fluid" >
-    <Link className="navbar-brand" to="/" style={{fontWeight:700}}>Let's Play</Link>
+    <a className="navbar-brand" href="/" style={{fontWeight:700}}>Let's Play</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/" style={{fontWeight:400}} >Home</Link>
+          <a className="nav-link active" aria-current="page" href="/" style={{fontWeight:400}} >Home</a>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/About" style={{fontWeight:400}}>About</Link>
-        </li>
+        {/* <li className="nav-item">
+          <a className="nav-link" href="/About" style={{fontWeight:400}}>About</a>
+        </li> */}
         <li className="nav-item" onClick={handleMode}>
           <div className="nav-link"  style={{fontWeight:600, color:{textColor}, cursor:'pointer'}}>
             <i className={icon}></i> Turn {modeName}

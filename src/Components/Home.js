@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <div>
         <div className="container">
-            <h3 className='my-4'>Enter your text here-</h3>
+            <h3 className='my-4'>Plz Enter your text here-</h3>
             <div className="mb-3">
             <textarea className="form-control" id="textArea" rows="6" value={text} onChange={handleChangement} placeholder='Enter your text here'></textarea></div>
             <button className='btn btn-primary mx-2' onClick={converterBtnUpper} >Covert to Uppercase</button>
