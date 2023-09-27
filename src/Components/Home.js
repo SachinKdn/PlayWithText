@@ -70,11 +70,11 @@ export default function Home() {
             <h3 className='my-4'>Plz Enter your text here-</h3>
             <div className="mb-3">
             <textarea className="form-control" id="textArea" rows="6" value={text} onChange={handleChangement} placeholder='Enter your text here'></textarea></div>
-            <button className='btn btn-primary mx-2' onClick={converterBtnUpper} >Covert to Uppercase</button>
-            <button className='btn btn-success mx-2' onClick={converterBtnLower} >Covert to Lowercase</button>
-            <button className='btn btn-danger mx-2' onClick={clearAll} >Clear All</button>
-            <button className='btn btn-primary mx-2' onClick={handleCapitalizeWordClick} >Capitalize Words</button>
-            <button className='btn btn-success mx-2' onClick={handleClipboard} >Copy</button>
+            <button className='btn btn-primary mx-2 my-2' onClick={converterBtnUpper} >Covert to Uppercase</button>
+            <button className='btn btn-success mx-2 my-2' onClick={converterBtnLower} >Covert to Lowercase</button>
+            <button className='btn btn-danger mx-2 my-2' onClick={clearAll} >Clear All</button>
+            <button className='btn btn-primary mx-2 my-2' onClick={handleCapitalizeWordClick} >Capitalize Words</button>
+            <button className='btn btn-success mx-2 my-2' onClick={handleClipboard} >Copy</button>
             <button type="submit" onClick={speak} className="btn btn-warning mx-2 my-2">Speak</button>
             <h4 className='my-3'>Your Text Summary</h4>
             <p>{checkWords(text)} words, {text.length} characters</p>
